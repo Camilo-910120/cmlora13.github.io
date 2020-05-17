@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ID Atribute</title>
+        <style type="tetx/css">
+            p#pullquote {
+                text-trasform: uppercase;}
+        </style>
+    </head>
+    <body>
+        <p>Cada elemento HTML puede llevar el atributo id. se utiliza para identificar de forma unica
+           ese elemento de otros elementos de la pagina. Su valor debe comenzar con una letra o un gion bajo
+           (no un numero o cualquier otro caracter).
+           es importante que no hay dos elemntos en la misma pagina que tengan el mismo valor para sus
+           atributos ID (de lo contrario,el valor noes unico)</p>
+        <p id="pullquote">Dar a un elemento una identidad unica le permite darle un estilo diferente que
+           cualquier otra instancia del mismo elemento en la pagina. </p>
+        <p>Por ejemplo, es posible que desees asignar un parrafo dentro de la pagina (quizas un parrafo que
+            contiene una cotizacion de extraccion) un estilo diferente que todos los demas parrafos.
+            En el ejemplo, el parrafo con el atributo ID cuyo valor es pullquote se hace
+            en mayusculas usando css.</p>
+    </body>
+</html>
+
+
+
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Class Atribute</title>
+        <style type="tetx/css">
+            .important {
+                text-trasform: uppercase;}
+            .admittance {
+                color:#FF6666;}
+        </style>
+    </head>
+    <body>
+        <p class="important">Cada elemento de HTML tambien puede llevar un atribudo de clase. Aveces,
+        en lugar de identificar de forma unica dentro de un documento, deseara de una manera de
+        identificar varios elementos como diferentes de los demas elementos de la pagina. por ejemplo,
+        es posible que tengan algunos parrafos de texto que contengan informacion que sea mas importante
+        que otros y desee distinguir estos elementos o puede que desee diferenciar entre vinculos que
+        apuntan a otras paginas de otro sitio y vinculos que apuntan a sitios externos.</p>
+
+        <p>Para ello, puede utilizar el atributo de clase. su valor debe describir la clase a la que
+        partenece. En el ejemplo de la izquierda, los parrafos clave tienen un atributo de clase cuyo
+        valor es importante. El atributo de clase en cualquier elemento puede compartir el mismo valor.
+        por lo tanto, en este ejemplo, el valor de Important tambien se podria utilizar en encabezados y viculos.
+
+        </p>
+        <p class="Important admittance">De forma predeterminada, el uso de estos atributos no afecta
+        a la presentacion de un elemento. Solo cambiara su apariencia si hay una regla de CSS que identificar
+        que debe mostrarse de forma diferente. En este ejemplo, el CSS se ha aplicado para hacer los
+        elementos con un atributo de clase cuyo valor es mayuscula importante, y los elementos con
+        un atributo de clase cuyo valor es la admision roja. Si desea indicar que un elemnto pertenece
+        a varias clases, puede separar los nombres de clase con un espacio.</p>
+    
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Grouping block elements</title>
+        <style type="tetx/css">
+            .galery {
+                text-trasform: uppercase; color: #2449c6;}
+            div#pheader {
+                color: #FF6666;}
+            div#pfooter {
+                color:#72d27c;}
+        </style>
+    </head>
+    <body>
+        <div id="pheader"><p>El elemento &lt;div&gt; permite agrupar un grupo de  elementos
+            juntos en un cuadro de nivel de bloque. por ejemplo, puede crear un elemento
+            &lt;div&gt; para que contenga todos los elementos del encabezado del sitio (el
+            logotipo y la  navegacion), O puede crear un elemento &lt;div&gt; para que contenga
+            informacion en bloques.</p>
+        </div><!--final del div pheader -->
+        <div id="pbody"> <p>En un navegador el contenido del elemento &lt;div&gt; comenzara en
+            una nueva linea, pero aparte de esto no hara ninguna diferencia en la presentacion
+            de la pagina. <span class="gallery"> Sin embargo el uso de un atributo ID o class en el
+            elemento &lt;div&gt; significa que puede crear reglas de estilo CSS para indicar cuanto
+            espacio debe ocupar el elemento &lt;div&gt; en la pantalla y cambiar la apariencia de 
+            todos los elementos contenidos en el.</span>Tambien puede facilitar el seguimiento del 
+            codigo si ha utlizado elementos &lt;div&gt; para contener cada seccion de la pagina.</p>
+        </div>
+        <div id="pfooter"><p>Dado que puede haber varios otros elementos dentro de un elemento
+            &lt;div&gt; puede ser util agregar un comentario despues de la etiqueta &lt;&#47;div&gt;
+            de cierre esto le permite ver claramente a que etiqueta de apertura se supone que corresponde.</p>
+        </div><!--final del div sfooter-->
+    </body>
+</html>
+
+
+
+
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>IFrames</title>
+    </head>
+    <body>
+        <iframe width="450" height="350" 
+        src="http://maps.google.co.uk/maps?q=IED+Gonzalo+Arango+bogota&amp;out=embed">
+       </iframe>
+       <p>Un iframe es como una pequeña ventana que se ha cortado en tu pagina, y en esa
+          ventana puedes ver otra pagina. El termino iframe es una abreviatura de marco alineado.
+          Un uso comun de iframes (que puede haber visto en varios sitios web) es incrustar un
+          mapa de google en una pagina. El contenido del iframe puede ser cualquier pagina HTML 
+          (ya sea en el mismo servidor o en cualquier lugar de la web). Se crea un iframe
+          mediante el elemento &lt;iframe&gt; Hay algunos atributos que debes saber para usarlo:
+       </p>
+       <p>
+       <b>src:</b>El atributo <i>src</i> especifica la direccion URL de la pagina que se mostrara 
+       en el iframe.</p>
+       <p><b>height:</b>el atributo <i>height</i>especifica la altura del iframe en pixeles. </p>
+       <p><b>width</b>el atributo <i>width</i>especifica el ancho del iframe en pixeles. </p>
+    </body>
+</html>
+
+
+
+
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Information about your pages - meta</title>
+        <meta name="description" content="esta es mi home page personal" >
+        <meta name="description" content="esta es mi home page personal" >
+        <meta name="description" content="esta es mi home page personal" >
+        <meta name="description" content="esta es mi home page personal" >
+        <meta name="description" content="esta es mi home page personal" >
+        <meta name="description" content="esta es mi home page personal" >
+    </head>
+    <body>
+        <p></p><hr/><p></p>
+    </body>
