@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formas-Personal</title>
+        <style type="text/css">
+            body {
+                font-family: arial, verdana, sans-serif;
+                font-size: 90%;
+                color: #666;
+                background-color: #dde0e2;}
+            li {
+                list-style-image: url("images/twitter.png");
+                line-height: 1.6em;
+                color: darkorchid;}
+            table {
+                border-spacing: 0px;}
+            th, td {
+                padding: 5px 30px 5px 10px;
+                border-spacing: 0px;
+                font-size: 90%;
+                margin: 0px;}
+            th, td {
+                text-align: left;
+                background-color: #e0e9f0;
+                border-top: 1px solid #f1f8fe;
+                border-bottom: 1px solid #cbd2d8;
+                border-right: 1px solid #cbd2d8;}
+            tr.head th {
+                color: #fff;
+                background-color: #90b4d6;
+                border-bottom: 2px solid #547ca0;
+                border-right: 1px solid #749abe;
+                border-top: 1px solid #90b4d6;
+                text-align: center;
+                text-shadow: -1px -1px 1px #666666;
+                letter-spacing: 0.15em;}
+            td {
+                text-shadow: 1px 1px 1px #ffffff;}
+            tr.even td, tr.even th {
+                background-color: #e8eff5;}
+            tr.head th:first-child {
+                -webkit-border-top-left-radius: 5px;
+                -moz-border-radius-topleft: 5px;
+                border-top-left-radius: 5px;}
+            tr.head th:last-child {
+                -webkit-border-top-right-radius: 5px;
+                -moz-border-radius-topright: 5px;
+                border-top-right-radius: 5px;}
+            fieldset {
+                width: 310px;
+                margin-top: 20px;
+                border: 1px solid #d6d6d6;
+                background-color: #ffffff;
+                line-height: 1.6em;}
+            legend {
+                font-style: italic;
+                color: #666666;}
+            input [type="text"] {
+                width: 120px;
+                border: 1px solid #d6d6d6;
+                padding: 2px;
+                outline: none;}
+            input [type="text"]:focus,
+            input [type="text"]:hover {
+                background-color: #d0e2f0;
+                border: 1px solid #999999;}
+            input [type="submit"] {
+                border: 1px solid #006633;
+                background-color: #009966;
+                color: #ffffff;
+                border-radius: 5px;
+                padding: 5px;
+                margin-top: 10px;}
+            input [type="submit"]:hover {
+                border: 1px solid #006633;
+                background-color: #00cc33;
+                color: #ffffff;
+                cursor: pointer;}
+            .title {
+                float: left;
+                width: 160px;
+                clear: left;}
+            .submit {
+                width: 310px;
+                text-align: right;}
+            h1 {text-align: left; color: rgb(100, 40, 211);}
+            p {color: darkorchid;}
+        </style>
+    </head>
+    <body>
+        <h1>En la esquina improvisando</h1>
+        <p>Tenemos una serie de opciones para que impulses tu mundo artístico.</p>
+        <p>Si te interesa impulsar tu carrera artistica y tener un trabajo audiovisual de calidad mundial mira estos datos:</p>
+        <ul>
+            <li>Produccion de audio</li>
+            <li>Produccion de Video</li>
+            <li>Patentacion de obras</li>
+            <li>Promoción de tu producto</li>
+            <li>Asesoria de imagen</li>
+        </ul>
+        <table>
+            <tr class="head">
+                <th></th>
+                <th>Bogotá</th>
+                <th>Arménia</th>
+                <th>Túnja</th>
+            </tr>
+            <tr>
+                <th>Produccion de audio</th>
+                <td>Chapinero <br />3219485243</td>
+                <td>Barrio rojas pinilla <br />3103679266</td>
+                <td>Barrio los Indios <br />3118675729</td>
+            </tr>
+            <tr class="even">
+                <th>Produccion de video</th>
+                <td>Tunjuelito <br />3147257842</td>
+                <td>Edificio Arcocentro <br />3219485243</td>
+                <td>plaza de bolivar <br />3103679266</td>
+            </tr>
+            <tr>
+                <th>Patentacion de obras</th>
+                <td>Chapinero  <br />3147257842</td>
+                <td>Barrio la union <br />3226415004</td>
+                <td>Barrio los tunjos<br />3219485243</td>
+            </tr>
+            <tr class="even">
+                <th>Promocion de productos</th>
+                <td>Usaquen <br />3208382559</td>
+                <td>Barrio rojas pinilla <br />3108713192</td>
+                <td>N/A <br />N/A</td>
+            </tr>
+            <tr class="even">
+                <th>Asesoria de imagen</th>
+                <td>Suba-chapinero <br />3219485243</td>
+                <td>N/A<br />N/A</td>
+                <td>Centro de convenciones <br />3147256781</td>
+            </tr>
+        </table>
+        <form action="http://www.example.com/form.php" method="get">
+           <fieldset>
+               <legend>Registrese en el módulo de su interes :</legend>
+               <p><label class="title" for="name">Su nombre:</label>
+                     <input type="text" name="name" id="name"><br />
+                     <label class="title" for="email">Su correo:</label>
+                     <input type="text" name="email" id="email"></p>
+                <p><label for="location" class="title">Su centro cercano:</label>
+                     <select name="location" id="location">
+                         <option value="ny">Bogotá</option>
+                         <option value="il">Arménia</option>
+                         <option value="ca">Tunja</option>
+                     </select></p>
+                <span class="title">Has ingresado en otras ocasiones?</span>
+                <label><input type="radio" name="member" value="yes" />Si</label>
+                <label><input type="radio" name="member" value="no" />No</label>
+           </fieldset>
+        <div class="submit"><input type="submit" value="Registro" /></div>
+        </form>
+    </body>
+</html>
+        
